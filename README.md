@@ -1,6 +1,6 @@
 # Hover Flashcards by Jun Kim
 
-This project was complete on June 24th, 2018 and is deployed here: http://www.chongjunkim.com/hover-flashcards/
+This project was complete on *June 24th, 2018* and is deployed here: http://www.chongjunkim.com/hover-flashcards/
 
 ## Project Plan
 <dl>
@@ -26,9 +26,9 @@ This project was complete on June 24th, 2018 and is deployed here: http://www.ch
   
   <dt>A plan for the next 3 weeks and what you plan to accomplish each week</dt>
   <dd>
-    <b>Week 1</b> Setup the backbone of the React App and setup Firebase<br>
-    <b>Week 2</b> Create JSON data and implement code<br>
-    <b>Week 3</b> Integrate features using jQuery and use CSS to polish design
+    Week 1: Setup the backbone of the React App and setup Firebase<br>
+    Week 2: Create JSON data and implement code<br>
+    Week 3: Integrate features using jQuery and use CSS to polish design
   </dd>
 </dl>
 
