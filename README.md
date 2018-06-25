@@ -10,9 +10,6 @@ This project was complete on June 24th, 2018 and is deployed here: http://www.ch
   <dt>The elevator pitch</dt>
   <dd>I have always wanted to design my own flashcard app when learning vocabulary, making it as easy as to just hovering on the card to flip to the back. Also, I'm thinking of adding difficulty levels where the card would flip once and flip back to its front side in seconds. I'll adjust the amount of seconds we get to see the back side (answer). I could even hide parts of the answer so it'll seem like a quiz!</dd>
   
-  <dt>The elevator pitch</dt>
-  <dd>I have always wanted to design my own flashcard app when learning vocabulary, making it as easy as to just hovering on the card to flip to the back. Also, I'm thinking of adding difficulty levels where the card would flip once and flip back to its front side in seconds. I'll adjust the amount of seconds we get to see the back side (answer). I could even hide parts of the answer so it'll seem like a quiz!</dd>
-  
   <dt>Wireframe</dt>
   <dd>https://wireframe.cc/Iz434D</dd>
   
@@ -29,12 +26,11 @@ This project was complete on June 24th, 2018 and is deployed here: http://www.ch
   
   <dt>A plan for the next 3 weeks and what you plan to accomplish each week</dt>
   <dd>
-    - 1 week: Setup the backbone of the React App and setup Firebase<br>
-    - 2 week: Create JSON data and implement code<br>
-    - 3 week: Integrate features using jQuery and use CSS to polish design
+    <b>Week 1</b> Setup the backbone of the React App and setup Firebase<br>
+    <b>Week 2</b> Create JSON data and implement code<br>
+    <b>Week 3</b> Integrate features using jQuery and use CSS to polish design
   </dd>
 </dl>
-
 
 ## Final Thoughts
   - By completing this project I have learned so much about creating **React** apps, using **Firebase** to store database, and deploying the app on **Github**.
