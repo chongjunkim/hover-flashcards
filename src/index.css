@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("./Img/andy-munro-560390-unsplash.jpg");
+  background: url("./Img/pokemonBG.png") no-repeat center center fixed;
   background-size: cover;
   font-family: "Century Gothic";
 }

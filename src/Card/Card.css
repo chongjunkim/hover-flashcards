@@ -13,7 +13,7 @@
   height: 400px;
   width: 400px;
   position: absolute;
-  border: 1px solid #300000;
+  border: 1px solid #001C7A;
   transform-style: preserve-3d;
   transition: all 0.4s ease-in-out;
   font-weight: bold;
@@ -38,6 +38,8 @@
   overflow: hidden;
   text-align: center;
   background-color: rgba(255, 251, 251, 1);
+  background: url("../../src/Img/pokemonCardBG.jpg") no-repeat 50% 30%;
+  background-size: cover;
 }
 
 .card .back {
