@@ -100,22 +100,22 @@ class Level extends Component {
           <li>
             <img src="https://vignette.wikia.nocookie.net/pokemon/images/1/13/Poke_Ball_Sprite.png/revision/latest?cb=20151205192135" alt="pokeball" />
             <input type="radio" name="level" value="Default" defaultChecked onChange={this.onSiteChanged1} id="defaultButton"/>
-            <label htmlFor="defaultButton">Default</label>
+            <label htmlFor="defaultButton">Basic</label>
           </li>
           <li>
             <img src="https://vignette.wikia.nocookie.net/pokemon/images/0/04/Great_Ball_Sprite.png/revision/latest?cb=20151206104449" alt="pokeball" />
           <input type="radio" name="level" value="Easy" onChange={this.onSiteChanged2} id="easyButton"/>
-            <label htmlFor="easyButton">Easy</label>
+            <label htmlFor="easyButton">Great</label>
           </li>
           <li>
             <img src="https://vignette.wikia.nocookie.net/pokemon/images/0/04/Ultra_Ball_Sprite.png/revision/latest?cb=20151206104354" alt="pokeball" />
           <input type="radio" name="level" value="Medium" onChange={this.onSiteChanged3} id="mediumButton"/>
-            <label htmlFor="mediumButton">Medium</label>
+            <label htmlFor="mediumButton">Ultra</label>
           </li>
           <li>
             <img src="https://vignette.wikia.nocookie.net/pokemon/images/a/a1/Master_Ball_Sprite.png/revision/latest?cb=20151208194000" alt="pokeball" />
           <input type="radio" name="level" value="Hard" onChange={this.onSiteChanged4} id="hardButton"/>
-            <label htmlFor="hardButton">Hard</label>
+            <label htmlFor="hardButton">Master</label>
           </li>
         </ul>
       </div>
