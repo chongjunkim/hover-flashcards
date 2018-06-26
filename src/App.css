@@ -38,6 +38,7 @@
   font-weight: bold;
   color:#ffffff;
   text-shadow: 0px 0px 10px #333333;
+  font-size: 18px;
 }
 
 .cardRow {
@@ -54,4 +55,5 @@
   border-radius: 50px;
   color:#ffffff;
   padding: 5px;
+  font-size: 12px;
 }

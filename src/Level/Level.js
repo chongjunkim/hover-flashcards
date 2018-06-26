@@ -18,7 +18,7 @@ class Level extends Component {
     $('.card').attr('class', 'card easy');
     $('.name').css({'color' : '#999999'});
     $('.type').css({'color' : '#999999'});
-    $('.tip').text('The card will flip for 3 seconds.');
+    $('.tip').text('The card will flip for 2 seconds and the text is a little dimmed.');
 
     $('.easy').on("mouseenter", function() {
       var editor_disabled1 = $(this).data("editor-disabled1");
@@ -27,7 +27,7 @@ class Level extends Component {
           var counter = 0;
           var interval = setInterval(function() {
             counter++;
-            if (counter === 3) {
+            if (counter === 2) {
               $('.easy').css({'transform' : 'initial'});
               clearInterval(interval);
             }
@@ -45,7 +45,7 @@ class Level extends Component {
     $('.card').attr('class', 'card medium');
     $('.name').css({'color' : '#444444'});
     $('.type').css({'color' : '#444444'});
-    $('.tip').text('The card will flip for 2 seconds and the text is dimmed.');
+    $('.tip').text('The card will flip for 1 seconds and the text is more dimmed.');
 
     $('.medium').on("mouseenter", function() {
       var editor_disabled2 = $(this).data("editor-disabled2");
@@ -54,7 +54,7 @@ class Level extends Component {
           var counter = 0;
           var interval = setInterval(function() {
             counter++;
-            if (counter === 2) {
+            if (counter === 1) {
               $('.medium').css({'transform' : 'initial'});
               clearInterval(interval);
             }
