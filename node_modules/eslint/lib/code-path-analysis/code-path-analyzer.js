@@ -31,17 +31,6 @@ function isCaseNode(node) {
 }
 
 /**
- * Checks whether the given logical operator is taken into account for the code
- * path analysis.
- *
- * @param {string} operator - The operator found in the LogicalExpression node
- * @returns {boolean} `true` if the operator is "&&" or "||"
- */
-function isHandledLogicalOperator(operator) {
-    return operator === "&&" || operator === "||";
-}
-
-/**
  * Checks whether or not a given logical expression node goes different path
  * between the `true` case and the `false` case.
  *
@@ -241,10 +230,7 @@ function preprocess(analyzer, node) {
 
     switch (parent.type) {
         case "LogicalExpression":
-            if (
-                parent.right === node &&
-                isHandledLogicalOperator(parent.operator)
-            ) {
+            if (parent.right === node) {
                 state.makeLogicalRight();
             }
             break;
@@ -375,12 +361,7 @@ function processCodePathToEnter(analyzer, node) {
             break;
 
         case "LogicalExpression":
-            if (isHandledLogicalOperator(node.operator)) {
-                state.pushChoiceContext(
-                    node.operator,
-                    isForkingByTrueOrFalse(node)
-                );
-            }
+            state.pushChoiceContext(node.operator, isForkingByTrueOrFalse(node));
             break;
 
         case "ConditionalExpression":
@@ -449,13 +430,8 @@ function processCodePathToExit(analyzer, node) {
     switch (node.type) {
         case "IfStatement":
         case "ConditionalExpression":
-            state.popChoiceContext();
-            break;
-
         case "LogicalExpression":
-            if (isHandledLogicalOperator(node.operator)) {
-                state.popChoiceContext();
-            }
+            state.popChoiceContext();
             break;
 
         case "SwitchStatement":
@@ -622,10 +598,8 @@ class CodePathAnalyzer {
             preprocess(this, node);
         }
 
-        /*
-         * Updates the code path.
-         * And emits onCodePathStart/onCodePathSegmentStart events.
-         */
+        // Updates the code path.
+        // And emits onCodePathStart/onCodePathSegmentStart events.
         processCodePathToEnter(this, node);
 
         // Emits node events.
@@ -644,10 +618,8 @@ class CodePathAnalyzer {
     leaveNode(node) {
         this.currentNode = node;
 
-        /*
-         * Updates the code path.
-         * And emits onCodePathStart/onCodePathSegmentStart events.
-         */
+        // Updates the code path.
+        // And emits onCodePathStart/onCodePathSegmentStart events.
         processCodePathToExit(this, node);
 
         // Emits node events.

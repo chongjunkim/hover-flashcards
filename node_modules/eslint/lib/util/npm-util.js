@@ -50,15 +50,17 @@ function findPackageJson(startDir) {
  * @returns {void}
  */
 function installSyncSaveDev(packages) {
-    const packageList = Array.isArray(packages) ? packages : [packages];
-    const npmProcess = spawn.sync("npm", ["i", "--save-dev"].concat(packageList),
+    if (!Array.isArray(packages)) {
+        packages = [packages];
+    }
+    const npmProcess = spawn.sync("npm", ["i", "--save-dev"].concat(packages),
         { stdio: "inherit" });
     const error = npmProcess.error;
 
     if (error && error.code === "ENOENT") {
-        const pluralS = packageList.length > 1 ? "s" : "";
+        const pluralS = packages.length > 1 ? "s" : "";
 
-        log.error(`Could not execute npm. Please install the following package${pluralS} with a package manager of your choice: ${packageList.join(", ")}`);
+        log.error(`Could not execute npm. Please install the following package${pluralS} with your package manager of choice: ${packages.join(", ")}`);
     }
 }
 
@@ -109,14 +111,8 @@ function check(packages, opt) {
     try {
         fileJson = JSON.parse(fs.readFileSync(pkgJson, "utf8"));
     } catch (e) {
-        const error = new Error(e);
-
-        error.messageTemplate = "failed-to-read-json";
-        error.messageData = {
-            path: pkgJson,
-            message: e.message
-        };
-        throw error;
+        log.info("Could not read package.json file. Please check that the file contains valid JSON.");
+        throw new Error(e);
     }
 
     if (opt.devDependencies && typeof fileJson.devDependencies === "object") {

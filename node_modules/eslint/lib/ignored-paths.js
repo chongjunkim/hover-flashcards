@@ -76,6 +76,7 @@ function findPackageJSONFile(cwd) {
  * @returns {Object} Merged options
  */
 function mergeDefaultOptions(options) {
+    options = (options || {});
     return Object.assign({}, DEFAULT_OPTIONS, options);
 }
 
@@ -89,11 +90,10 @@ function mergeDefaultOptions(options) {
 class IgnoredPaths {
 
     /**
-     * @param {Object} providedOptions object containing 'ignore', 'ignorePath' and 'patterns' properties
+     * @param {Object} options object containing 'ignore', 'ignorePath' and 'patterns' properties
      */
-    constructor(providedOptions) {
-        const options = mergeDefaultOptions(providedOptions);
-
+    constructor(options) {
+        options = mergeDefaultOptions(options);
         this.cache = {};
 
         /**
@@ -114,10 +114,8 @@ class IgnoredPaths {
             default: ignore()
         };
 
-        /*
-         * Add a way to keep track of ignored files.  This was present in node-ignore
-         * 2.x, but dropped for now as of 3.0.10.
-         */
+        // Add a way to keep track of ignored files.  This was present in node-ignore
+        // 2.x, but dropped for now as of 3.0.10.
         this.ig.custom.ignoreFiles = [];
         this.ig.default.ignoreFiles = [];
 
@@ -176,11 +174,6 @@ class IgnoredPaths {
                             packageJSONOptions = JSON.parse(fs.readFileSync(packageJSONPath, "utf8"));
                         } catch (e) {
                             debug("Could not read package.json file to check eslintIgnore property");
-                            e.messageTemplate = "failed-to-read-json";
-                            e.messageData = {
-                                path: packageJSONPath,
-                                message: e.message
-                            };
                             throw e;
                         }
 
@@ -236,7 +229,7 @@ class IgnoredPaths {
     /**
      * Determine whether a file path is included in the default or custom ignore patterns
      * @param {string} filepath Path to check
-     * @param {string} [category=undefined] check 'default', 'custom' or both (undefined)
+     * @param {string} [category=null] check 'default', 'custom' or both (null)
      * @returns {boolean} true if the file path matches one or more patterns, false otherwise
      */
     contains(filepath, category) {
@@ -245,11 +238,12 @@ class IgnoredPaths {
         const absolutePath = path.resolve(this.options.cwd, filepath);
         const relativePath = pathUtil.getRelativePath(absolutePath, this.baseDir);
 
-        if (typeof category === "undefined") {
-            result = (this.ig.default.filter([relativePath]).length === 0) ||
-                (this.ig.custom.filter([relativePath]).length === 0);
-        } else {
-            result = (this.ig[category].filter([relativePath]).length === 0);
+        if ((typeof category === "undefined") || (category === "default")) {
+            result = result || (this.ig.default.filter([relativePath]).length === 0);
+        }
+
+        if ((typeof category === "undefined") || (category === "custom")) {
+            result = result || (this.ig.custom.filter([relativePath]).length === 0);
         }
 
         return result;
