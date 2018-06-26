@@ -2,9 +2,6 @@
   "cards": [
     {
       "id": 1,
-      "eng": "to be",
-      "han": "a",
-      "pin": "shi",
       "name": "Bulbasaur",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/bulbasaur.gif",
@@ -12,9 +9,6 @@
     },
     {
       "id": 2,
-      "eng": "not",
-      "han": "b",
-      "pin": "bu",
       "name": "Ivysaur",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/ivysaur.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/ivysaur.gif",
@@ -22,9 +16,6 @@
     },
     {
       "id": 3,
-      "eng": "person",
-      "han": "c",
-      "pin": "ren",
       "name": "Venusaur",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/venusaur.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/venusaur.gif",
@@ -32,9 +23,6 @@
     },
     {
       "id": 4,
-      "eng": "we",
-      "han": "d",
-      "pin": "women",
       "name": "Charmander",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/charmander.gif",
@@ -42,9 +30,6 @@
     },
     {
       "id": 5,
-      "eng": "to be",
-      "han": "e",
-      "pin": "shi",
       "name": "Charmeleon",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/charmeleon.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/charmeleon.gif",
@@ -52,9 +37,6 @@
     },
     {
       "id": 6,
-      "eng": "to be",
-      "han": "e",
-      "pin": "shi",
       "name": "Charizard",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/charizard.gif",
@@ -62,9 +44,6 @@
     },
     {
       "id": 7,
-      "eng": "to be",
-      "han": "e",
-      "pin": "shi",
       "name": "Squirtle",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/squirtle.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/squirtle.gif",
@@ -72,9 +51,6 @@
     },
     {
       "id": 8,
-      "eng": "to be",
-      "han": "e",
-      "pin": "shi",
       "name": "Wartortle",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/wartortle.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/wartortle.gif",
@@ -82,22 +58,86 @@
     },
     {
       "id": 9,
-      "eng": "to be",
-      "han": "e",
-      "pin": "shi",
       "name": "Blastoise",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/blastoise.gif",
       "type":  "Water"
     },
     {
+      "id": 10,
+      "name": "Caterpie",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/caterpie.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/caterpie.gif",
+      "type":  "Bug"
+    },
+    {
+      "id": 11,
+      "name": "Metapod",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/metapod.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/metapod.gif",
+      "type":  "Bug"
+    },
+    {
+      "id": 12,
+      "name": "Butterfree",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/butterfree.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/butterfree.gif",
+      "type":  "Bug · Flying"
+    },
+    {
+      "id": 13,
+      "name": "Weedle",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/weedle.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/weedle.gif",
+      "type":  "Bug · Poison"
+    },
+    {
+      "id": 14,
+      "name": "Kakuna",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/kakuna.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/kakuna.gif",
+      "type":  "Bug · Poison"
+    },
+    {
+      "id": 15,
+      "name": "Beedrill",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/beedrill.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/beedrill.gif",
+      "type":  "Bug · Poison"
+    },
+    {
+      "id": 16,
+      "name": "Pidgey",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/pidgey.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/pidgey.gif",
+      "type":  "Normal · Flying"
+    },
+    {
+      "id": 17,
+      "name": "Pidgeotto",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/pidgeotto.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/pidgeotto.gif",
+      "type":  "Normal · Flying"
+    },
+    {
+      "id": 18,
+      "name": "Pidgeot",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/pidgeot.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/pidgeot.gif",
+      "type":  "Normal · Flying"
+    },
+    {
       "id": 25,
-      "eng": "to be",
-      "han": "e",
-      "pin": "shi",
       "name": "Pikachu",
       "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif",
       "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/pikachu.gif",
+      "type":  "Electric"
+    },
+    {
+      "id": 26,
+      "name": "Raichu",
+      "sprite": "https://img.pokemondb.net/sprites/black-white/anim/normal/raichu.gif",
+      "spriteBack": "https://img.pokemondb.net/sprites/black-white/anim/back-normal/raichu.gif",
       "type":  "Electric"
     }
   ]

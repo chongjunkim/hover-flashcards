@@ -11,12 +11,14 @@ class Level extends Component {
     $('.card').attr('class', 'card default');
     $('.name').css({'color' : 'white'});
     $('.type').css({'color' : 'white'});
+    $('.tip').text('The card will flip when you hover your mouse on it.');
     return false;
   }
   onSiteChanged2(){
     $('.card').attr('class', 'card easy');
     $('.name').css({'color' : '#999999'});
     $('.type').css({'color' : '#999999'});
+    $('.tip').text('The card will flip for 3 seconds.');
 
     $('.easy').on("mouseenter", function() {
       var editor_disabled1 = $(this).data("editor-disabled1");
@@ -43,6 +45,7 @@ class Level extends Component {
     $('.card').attr('class', 'card medium');
     $('.name').css({'color' : '#444444'});
     $('.type').css({'color' : '#444444'});
+    $('.tip').text('The card will flip for 2 seconds and the text is dimmed.');
 
     $('.medium').on("mouseenter", function() {
       var editor_disabled2 = $(this).data("editor-disabled2");
@@ -69,6 +72,7 @@ class Level extends Component {
     $('.card').attr('class', 'card hard');
     $('.name').css({'color' : '#363636'});
     $('.type').css({'color' : '#363636'});
+    $('.tip').text('The card will flip for 0.5 seconds and the text is barely visible.');
 
     $('.hard').on("mouseenter", function() {
       var editor_disabled3 = $(this).data("editor-disabled3");

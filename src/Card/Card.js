@@ -5,9 +5,9 @@ const Card = (props) => (
   <div className="card-container">
     <div className="card default">
       <div className="front">
-        <div className="imgWrapper">
+        <p className="imgWrapper">&nbsp;
           <img src={props.sprite} alt="front" className="frontFaced"/>
-        </div>
+        </p>
       </div>
       <div className="back">
         <div className="name">{props.name}</div>

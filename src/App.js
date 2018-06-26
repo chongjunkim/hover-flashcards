@@ -52,6 +52,7 @@ class App extends Component {
       });
 
       $('.card').attr('draggable', 'false');
+      $('.tip').text('The card will flip when you hover your mouse on it.');
     })
   }
 
@@ -70,6 +71,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="title">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Pokemon" />
+          <p className="subtitle">Hover Flashcards</p>
+        </div>
         <div className="cardRow">
           <Card 
             eng={this.state.currentCard.eng} 
@@ -87,6 +92,7 @@ class App extends Component {
         <div className="button2Row">
           <Level/>
         </div>
+        <div className="tip"></div>
       </div>
     );
   }

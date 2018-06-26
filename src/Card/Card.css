@@ -1,7 +1,7 @@
 .card-container {
   cursor: pointer;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   perspective: 3000px;
   position: relative;
   margin: auto;
@@ -10,8 +10,8 @@
 }
 
 .card {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   position: absolute;
   border: 1px solid #001C7A;
   transform-style: preserve-3d;
@@ -25,14 +25,9 @@
   user-select: none;
 }
 
-/* .card:hover {
-  transform: rotateY(180deg);
-  transition: all 0.4s ease-in-out;
-} */
-
 .card .front {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   backface-visibility: hidden;
   position: absolute;
   overflow: hidden;
@@ -43,8 +38,8 @@
 }
 
 .card .back {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   text-align: center;
   transform: rotateY(180deg);
   background: #333333;
@@ -52,23 +47,24 @@
 }
 
 .frontFaced {
-  bottom: 20px;
-  margin-top: 170px;
+  vertical-align: text-bottom;
+  margin-left: -20px;
 }
 
 .backFaced {
-  bottom: 20px;
-  margin-top: 60px;
+  vertical-align: text-bottom;
+  margin-left: 0;
+  padding: 5px;
 }
 .imgWrapper {
-  height: 140px;
+  font-size: 80px;
 }
 
 .name {
-  font-size: 50px;
-  padding-top: 50px;
+  font-size: 40px;
+  padding-top: 30px;
 }
 
 .type {
-  padding-top: 50px;
+  padding-top: 30px;
 }
