@@ -19,6 +19,7 @@
   },
   "homepage": "https://chongjk88.github.io/hover-flashcards",
   "devDependencies": {
+    "eslint": "^5.0.1",
     "gh-pages": "^1.2.0"
   }
 }
