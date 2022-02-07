@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://chongjk88.github.io/hover-flashcards",
   "dependencies": {
-    "firebase": "^7.13.2",
-    "jquery": "^3.4.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "firebase": "^7.24.0",
+    "jquery": "^3.6.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
