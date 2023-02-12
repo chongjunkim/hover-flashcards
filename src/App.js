@@ -3,8 +3,8 @@ import './App.css';
 import Card from './Card/Card';
 import Draw from './Draw/Draw';
 import Level from './Level/Level';
-import firebase from 'firebase/app';
-import 'firebase/database';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';
 
 import $ from 'jquery';
 
