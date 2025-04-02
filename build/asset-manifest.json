@@ -1,8 +1,15 @@
 {
-  "main.css": "static/css/main.d27180b2.css",
-  "main.css.map": "static/css/main.d27180b2.css.map",
-  "main.js": "static/js/main.b349d280.js",
-  "main.js.map": "static/js/main.b349d280.js.map",
-  "static\\media\\pokemonBG.png": "static/media/pokemonBG.33ac6af8.png",
-  "static\\media\\pokemonCardBG.jpg": "static/media/pokemonCardBG.c7a9ac0a.jpg"
+  "files": {
+    "main.css": "/hover-flashcards/static/css/main.bc73d7ae.css",
+    "main.js": "/hover-flashcards/static/js/main.392b94f5.js",
+    "static/media/pokemonBG.png": "/hover-flashcards/static/media/pokemonBG.2bb5a837dcbeb0e46b9f.png",
+    "static/media/pokemonCardBG.jpg": "/hover-flashcards/static/media/pokemonCardBG.4df3f931af35f45c9624.jpg",
+    "index.html": "/hover-flashcards/index.html",
+    "main.bc73d7ae.css.map": "/hover-flashcards/static/css/main.bc73d7ae.css.map",
+    "main.392b94f5.js.map": "/hover-flashcards/static/js/main.392b94f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc73d7ae.css",
+    "static/js/main.392b94f5.js"
+  ]
 }
